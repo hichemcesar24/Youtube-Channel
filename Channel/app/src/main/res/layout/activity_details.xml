@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/img_no_data"
+        android:gravity="center"
+        android:id="@+id/imageLayout"
+
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image_thub_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_no_data"
+        android:gravity="center"
+        android:id="@+id/layout_2"
+
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:layout_height="40dp"
+                android:id="@+id/play_video"
+                android:background="@drawable/ic_play_arrow_black_24dp"
+                android:layout_width="40dp"/>
+        </LinearLayout>>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/title_details"
+           />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_no_data"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Date Published:"/>
+        <TextView
+            android:id="@+id/date_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#5E5E5E"
+           />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_no_data"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Duration:"/>
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#5E5E5E"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/description_detailds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#5E5E5E"
+
+            android:text="No Video Found."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_no_data"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+    </LinearLayout>>
+
+    </LinearLayout>
+    </TableLayout>>
+</ScrollView>
